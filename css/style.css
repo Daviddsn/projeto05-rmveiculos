@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html{
+    font-size: 62.52%;
+}
+a{
+    text-decoration: none;
+}
+html,body{
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+}
+.container{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.clear{
+    clear: both;
+}
+/* =========== HEADER ==================== */
+header{
+    padding: 2rem 0;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container .logo img{
+    height: 5rem;
+}
+header .menu-section ul{
+    list-style: none;
+}
+
+header .menu-section ul li{
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+}
+header .menu-section ul li a{
+    color: #141414;
+}
+header .menu-section ul li a:focus{
+    color: red;
+}
+
+
+/* ========== BANNER ================  */
+.banner{
+    height: calc(100% - 9rem);
+    width: 100%;
+    background-color: #000000;
+    background-image: url('../assets/img/bg.jpg');
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+.banner-text ul{
+    list-style-type: none;
+}
+.banner-text ul li {
+    background-image: url('../assets/img/box-text.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: #ffffff;
+    font-size: 2.4rem;
+    padding: 1rem 5rem;
+    margin-bottom: .8rem;
+    letter-spacing: .2rem;
+}
+.banner .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner  .banner-text{
+    max-width: 320px;
+}
+.banner  .banner-text ul li:nth-child(2){
+    width: 80%;
+    margin-left: -.5rem;
+}
+.banner  .banner-text ul li:nth-child(3){
+    width: 60%;
+    margin-left: -1rem;
+}
+.banner address{
+    background-image: url('../assets/img/box-white-text.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 1.8rem;
+    padding: 1rem 1rem;
+    margin-left: -2rem;
+}
+
+/* ===============VEICULOS DESTAQUE ============ */
+.destaque{
+    padding: 4rem 0;
+}
+.destaque .vitrine-titulo{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.destaque .vitrine-titulo::before,
+.destaque .vitrine-titulo::after{
+    content: "";
+    width: 100%;
+    max-width: 200px;
+    height: 2px;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: black;
+    margin: 0 2rem;
+}
+
+.destaque .vitrine-veiculos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+.destaque .vitrine-veiculos .img-veiculos-vitrine{
+    width: 100%;
+    height: 55%;
+}
+.destaque .vitrine-veiculos .img-veiculos-vitrine img{
+    width: 100%;
+    height: 100%;
+    
+}
+.destaque .vitrine-veiculos .veiculo-info{
+    flex: 0 1 250px;
+    margin: 3rem 1rem 2rem;
+    position: relative;
+    /* border: 1px solid #cdcdcd; */
+    
+}
+.destaque .vitrine-veiculos .veiculo-info h3{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    padding-left: .8rem;
+}
+.destaque .vitrine-veiculos .veiculo-info p{
+    font-size: 1.3rem;
+    height: 6rem;
+    width: 80%;
+    padding-left: .8rem;
+}
+.destaque .vitrine-veiculos .veiculo-info a{
+    display: block;
+    width: max-content;
+    background-color: red;
+    font-size: 1.6rem;
+    padding: 1rem 2rem ;
+    border-top: 2px solid rgb(236, 60, 60) ;
+    color: #ffffff;
+    margin-left: .8rem;
+}
+
+
+.dep-service{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+
+}
+.dep-service .container{
+    max-width: 400px;
+}
+.dep-service .container h2{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    font-style: normal;
+}
+.dep-service .content{
+    padding: 4rem 0;
+    width: 50%;
+}
+.dep-service .services{
+    background-color: black;
+   
+}
+.dep-service .services ul{
+    display: inline-block;
+    list-style-position: inside;
+}
+.dep-service .services ul li{
+    font-size: 1.3rem;
+}
+.dep-service .services a{
+    display: inline-block;
+    width: max-content;
+    
+    margin-left: 5rem;
+    padding: 1rem 2rem ;
+
+    font-size: 1.4rem;
+    background-color: red;
+    border-top: 2px solid rgb(236, 60, 60) ;
+    color: #ffffff;
+  
+}
+.dep-service .depoimentos{
+    background-color: red;
+    width: 50%;
+}
+
+.dep-service .depoimentos blockquote{
+    font-size: 1.3rem;
+}
+.dep-service .depoimentos span{
+    display: block;
+    color: #141414;
+    text-align: right;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+/* ============== FORMULARIO ================ */
+
+.contact {
+    padding: 6rem 0;
+}
+.contact h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.contact h2::before,
+.contact h2::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: black;
+    margin: 0 2rem;
+}
+
+.contact form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact form ul li{
+    list-style: none;
+    padding: .2rem;
+}
+.contact form input,
+.contact form textarea{
+    width: 100%;
+    border: 1px solid #cccccc;
+    padding-left: .8rem;
+    color: #808080
+}
+.contact form ul li.w50{
+    width: 50%;
+    float: left;
+}
+.contact form input{
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder{
+    color: #cccccc;
+    font-weight: 400;
+}
+.contact form textarea {
+    resize: none;
+    height: 15rem;
+    padding-top: .8rem;    
+}
+
+.contact form .btn{
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
+   
+    margin-top: 2rem;
+}
+
+.contact form .btn button{
+    background-color: red;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    border: 0;
+    cursor: pointer;
+    font-style: italic;
+}
+
+/* ============ FOOTER ============== */
+footer{
+    background-color: black;
+    padding: 2rem 0;
+}
+
+
+footer nav ul li{
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+}
+footer nav ul li a{
+    color: #ffffff;
+    font-size: 1.3rem;
+}

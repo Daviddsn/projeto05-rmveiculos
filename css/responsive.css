@@ -1,0 +1,81 @@
+@media screen and (max-width:1024px){
+    .banner{
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+    }
+    .banner .banner-text{
+        padding-left: 2%;
+    }
+}
+@media screen and (max-width:768px){
+    .menu-section nav{
+        display: none;
+    }
+    .destaque .vitrine-veiculos{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row: (2, 1fr);
+    }
+    .destaque .vitrine-veiculos .veiculo-info{
+        width: 250px;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width:425px){
+    .destaque .vitrine-veiculos{
+        display: block;
+      }
+
+      .destaque .vitrine-veiculos .veiculo-info{
+        margin: 3rem auto;
+        text-align: center;
+        
+    }
+    .destaque .vitrine-veiculos .veiculo-info a{
+        margin: 0 auto;
+    }
+
+
+    .dep-service{
+        flex-direction: column;
+
+    }
+
+    .dep-service .content{
+        width: 100%;
+    }
+
+    .dep-service .services a{
+        display: block;
+        width: max-content;
+        
+        margin: 2.5rem auto 0;
+        padding: 1rem 2rem ;
+    
+        font-size: 1.4rem;
+        background-color: red;
+        border-top: 2px solid rgb(236, 60, 60) ;
+        color: #ffffff;
+      
+    }
+
+
+    .destaque .vitrine-titulo::before,
+    .destaque .vitrine-titulo::after{
+        display: block;
+        margin: .2rem auto;
+    }
+
+    .contact h2::before,
+    .contact h2::after{
+        display: block;
+        margin: .2rem auto;
+    }
+
+    .contact form ul li.w50{
+        float: none;
+        width: 100%;
+    }
+}
